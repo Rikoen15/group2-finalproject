@@ -159,10 +159,10 @@ public class MyProgramUtility {
 
     /** 2. TODO Enrico - Use streams */
     protected static ArrayList<Citizen> countMales(Stream<Citizen> CitizenList) {
-        return CitizenList;
-       /* CitizenList.stream()
-            .filter(p -> p.getGender().equals(Gender.MALE))
-            .count();*/
+        CitizenList
+            .filter(p -> p.getGender() == 'M')
+            .count();
+       
     }
 
     /** 3. TODO Kurt - Use the result returned by item number 3, then subtract from the total number of Citizen objects */
